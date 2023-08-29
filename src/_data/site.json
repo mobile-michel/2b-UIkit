@@ -1,0 +1,10 @@
+{
+    "name": "UIkit",
+    "description": "Flux de travail Sass pour UIkit",
+    "authorName": "Michel Maillard",
+    "authorUrl": "https://michelmaillard.ch/",
+    "github": "https://github.com/mobile-michel/uikit",
+    "favicon": "https://11ty.recipes/images/meta/favicon.svg",
+    "css": "style.css",
+    "backgroundImage": "https://images.pexels.com/photos/14702039/pexels-photo-14702039.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1"
+}
