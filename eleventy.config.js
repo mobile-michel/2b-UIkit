@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.setServerOptions({
         // Additional files to watch that will trigger server updates
-        watch: ["_site/**/*.css"],
+        watch: ["_site/**/style.css"],
     });
     eleventyConfig.addTemplateFormats("scss");
     // Creates the extension for use
