@@ -1,18 +1,28 @@
 {
-  "name": "Eleventy-Pico.css-Sass-Workflow",
+  "name": "Eleventy UIkit Sass Workflow",
   "version": "1.0",
-  "description": "A Sass workflow for Pico.css version 2.0",
+  "description": "A Sass workflow for UIkit with Eleventy and LiquidJS",
   "main": "eleventy.config.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:scss": "npx sass scss:_site/assets/css --watch",
-    "start": "npm run watch:scss & npm run watch:eleventy"
+    "watch:sass": "npx sass scss/style.scss:_site/assets/css/style.css --watch",
+    "sass": "sass scss/style.scss:_site/assets/css/style.css",
+    "start": "npm run watch:sass & npm run watch:eleventy",
+    "build": "npm run sass && eleventy"
   },
-  "keywords": ["Eleventy", "LiquidJS", "Pico CSS", "SASS"],
+  "keywords": [
+    "Eleventy",
+    "LiquidJS",
+    "UIkit",
+    "SASS"
+  ],
   "author": "Michel Maillard",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "sass": "^1.64.2"
+  },
+  "dependencies": {
+    "uikit": "^3.16.26"
   }
 }
