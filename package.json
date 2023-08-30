@@ -5,7 +5,7 @@
   "main": "eleventy.config.js",
   "scripts": {
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "watch:sass": "npx sass scss/style.scss:_site/assets/css/style.css --watch",
+    "watch:sass": "npx sass scss/style.scss:_site/assets/css/style.css scss/theme.scss:_site/assets/css/theme.css --watch",
     "sass": "sass scss/style.scss:_site/assets/css/style.css",
     "start": "npm run watch:sass & npm run watch:eleventy",
     "build": "npm run sass && eleventy"
